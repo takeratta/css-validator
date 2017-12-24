@@ -6044,6 +6044,11 @@ n.image = Util.strip(n.image);
   }
 
   private Token jj_consume_token(int kind) throws ParseException {
+	 if (kind == IMPORTANT_SYM && !"!important".equals(token.next.image)) {
+	   throw new ParseException( //
+		 ac.getMsg().getString("parser.important_malformed", //
+		   new ArrayList<String>(Arrays.asList(token.next.image))));
+	 }
 	 Token oldToken;
 	 if ((oldToken = token).next != null) token = token.next;
 	 else token = token.next = token_source.getNextToken();

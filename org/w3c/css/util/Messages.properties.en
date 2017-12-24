@@ -428,3 +428,4 @@ error.typevaluemismatch: The value \u201C%s\u201D is incompatible with its type 
 
 # hacks
 parser.asterisk_prefixed_ident: Invalid identifier \u201C%s\u201D (asterisk-prefixed)
+parser.important_malformed: Expected \u201C!important\u201D but found \u201C%s\u201D
