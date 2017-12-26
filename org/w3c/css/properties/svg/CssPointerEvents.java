@@ -21,7 +21,8 @@ public class CssPointerEvents extends org.w3c.css.properties.css.CssPointerEvent
 
 	static {
 		String[] _allowed_values = {"visiblePainted", "visibleFill", "visibleStroke",
-				"visible", "painted", "fill", "stroke", "all", "none"};
+				"visible", "painted", "fill", "stroke", "all", "none",
+				"auto"};
 		allowed_values = new CssIdent[_allowed_values.length];
 		int i = 0;
 		for (String s : _allowed_values) {
