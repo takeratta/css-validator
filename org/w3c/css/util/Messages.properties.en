@@ -294,6 +294,7 @@ warning.noexistence-media: Property %s doesn't exist for media %s
 warning.notforusermedium : Property %s doesn't exist for this usermedium
 warning.noothermedium : Properties for other media might not work for usermedium
 warning.vendor-extension : Property %s is an unknown vendor extension
+warning.vendor-media: Feature \u201C%s\u201D is an unknown vendor extension
 warning.vendor-ext-pseudo-class : %s is an unknown vendor extended pseudo-class
 warning.vendor-ext-pseudo-element : %s is an unknown vendor extended pseudo-element
 # used by org.w3c.css.parser.AtRule*
