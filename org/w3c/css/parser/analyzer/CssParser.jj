@@ -1020,7 +1020,9 @@ void mediaexpression(AtRuleMedia mediaRule, boolean defaultMedia) :
     ( <S> )*
     ( <COLON> ( <S> )* val=mediaexpr() )? <LPARAN>  ( <S> )*  {
         MediaFeature mf = handleMediaFeature(mediaRule, mediaFeatureName, val);
-        mediaRule.addMediaFeature(mf, ac);
+        if (mf != null) {
+            mediaRule.addMediaFeature(mf, ac);
+        }
     }
 }
 
